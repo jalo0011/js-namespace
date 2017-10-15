@@ -1,6 +1,5 @@
 var JALO0011 = {
     init: function(){
-        
         let jaloBox = document.createElement("div");
         jaloBox.classList.add("box");
         jaloBox.textContent = "jalo0011";
