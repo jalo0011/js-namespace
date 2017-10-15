@@ -1,21 +1,21 @@
 var JALO0011 = {
     init: function(){
-        let d = document.createElement("div");
-        d.classList.add("box");
-        d.textContent("jalo0011")
-        let b = document.querySelector("#boxes");
-        b.appendChild(d);
-        d.addEventListener("click",toggleBorder);
-        d.addEventListener("mouseover",toggleHilight);
-        d.addEventListener("mouseout",toggleHilight);
+        let jaloBox = document.createElement("div");
+        jaloBox.classList.toggle("box");
+        jaloBox.textContent("jalo0011")
+        let theBoxesId = document.querySelector("#boxes");
+        theBoxesId.appendChild(jaloBoxox);
+        jaloBox.addEventListener("click",toggleBorder);
+        jaloBox.addEventListener("mouseover",toggleHilight);
+        jaloBox.addEventListener("mouseout",toggleHilight);
         
         function toggleBorder(ev){
-            d.borderColor('#bff');
-            d.backgroundColor('red');
+            jaloBox.borderColor('blue');
+            jaloBox.backgroundColor('green');
         }
         
         function toggleHilight(ev){
-            d.classList.toggle("hilight");
+            jaloBox.classList.toggle("hilight");
         }
     }
 }
