@@ -4,7 +4,7 @@ var JALO0011 = {
         jaloBox.classList.toggle("box");
         jaloBox.textContent("jalo0011")
         let theBoxesId = document.querySelector("#boxes");
-        theBoxesId.appendChild(jaloBoxox);
+        theBoxesId.appendChild(jaloBox);
         jaloBox.addEventListener("click",toggleBorder);
         jaloBox.addEventListener("mouseover",toggleHilight);
         jaloBox.addEventListener("mouseout",toggleHilight);
