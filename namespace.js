@@ -6,16 +6,16 @@ var JALO0011 = {
         let theBoxesId = document.querySelector("#boxes");
         theBoxesId.appendChild(jaloBox);
         jaloBox.addEventListener("click",toggleBorder);
-        jaloBox.addEventListener("mouseover",toggleHilight);
-        jaloBox.addEventListener("mouseout",toggleHilight);
+        jaloBox.addEventListener("mouseover",toggleHighlight);
+        jaloBox.addEventListener("mouseout",toggleHighlight);
         
         function toggleBorder(ev){
             jaloBox.style.borderColor = "blue";
             jaloBox.style.backgroundColor = "red";
         }
         
-        function toggleHilight(ev){
-            jaloBox.classList.toggle("hilight");
+        function toggleHighlight(ev){
+            jaloBox.classList.toggle("highlight");
         }
     }
 };
