@@ -2,7 +2,7 @@ var JALO0011 = {
     init: function(){
         let jaloBox = document.createElement("div");
         jaloBox.classList.toggle("box");
-        jaloBox.textContent("jalo0011")
+        jaloBox.textContent = "jalo0011";
         let theBoxesId = document.querySelector("#boxes");
         theBoxesId.appendChild(jaloBox);
         jaloBox.addEventListener("click",toggleBorder);
@@ -10,8 +10,8 @@ var JALO0011 = {
         jaloBox.addEventListener("mouseout",toggleHilight);
         
         function toggleBorder(ev){
-            jaloBox.style.border-color("blue")
-            jaloBox.style.background-color("red");
+            jaloBox.style.border-color = "blue";
+            jaloBox.style.backgroundColor = "red";
         }
         
         function toggleHilight(ev){
