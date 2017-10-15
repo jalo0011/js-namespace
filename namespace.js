@@ -10,8 +10,8 @@ var JALO0011 = {
         jaloBox.addEventListener("mouseout",toggleHilight);
         
         function toggleBorder(ev){
-            jaloBox.borderColor('blue');
-            jaloBox.backgroundColor('green');
+            jaloBox.style.border-color("blue")
+            jaloBox.style.background-color("red");
         }
         
         function toggleHilight(ev){
